@@ -1,0 +1,19 @@
+{
+  "name": "packagetest",
+  "version": "1.0.0",
+  "description": "A tet to test packaging apps ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/pkg index.js"
+  },
+  "author": "MikeModder",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "pkg": "^4.3.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "yargs": "^11.0.0"
+  }
+}
