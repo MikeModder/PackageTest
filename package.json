@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/pkg index.js"
+    "build": "./node_modules/.bin/pkg index.js --out-path build/"
   },
   "author": "MikeModder",
   "license": "GPL-3.0",
