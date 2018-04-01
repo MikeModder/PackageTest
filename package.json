@@ -6,7 +6,7 @@
   "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm build/* && ./node_modules/.bin/pkg . --out-path build/ -t node8-macos-x64,node8-linux-x64,node8-win-x86,node8-win-x64"
+    "build": "if  [ -d \"build\" ]; then rm -rf build/; fi && ./node_modules/.bin/pkg . --out-path build/ -t node8-macos-x64,node8-linux-x64,node8-win-x86,node8-win-x64"
   },
   "author": "MikeModder",
   "license": "GPL-3.0",
