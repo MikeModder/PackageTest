@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = require('yargs').argv.port || 8080;
+const port = parseInt(require('yargs').argv.port) || 8080;
 
 app.get('*', (req, res) => {
     res.send('Hello, world!');
